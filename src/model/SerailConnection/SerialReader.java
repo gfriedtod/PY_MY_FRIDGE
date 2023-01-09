@@ -1,6 +1,7 @@
 package model.SerailConnection;
 
-import model.Database.doa.DAOTemperature;
+import
+        model.Database.doa.DAOTemperature;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -35,19 +36,23 @@ public  class SerialReader implements Runnable {
 
     public void run() {
         byte[] buffer = new byte[1024];
-        int len = 1;
+        int len = -1;
         try {
-            while((len = this.in.read(buffer)) > 1) {
-               // System.out.print(new String(buffer,0,len));
+            while((len = this.in.read(buffer)) > -1) {
+                System.out.println("len "+len
+                );
+               System.out.print(new String(buffer,0,len));
+               System.out.println("--------------------------------");
                Output =new String(buffer,0,len);
                 //insertion des donne entrante dans la base de donne
-               // this.daoTemperature.insertTemperature(this);
-                System.out.println(Output);
+
+
 
             }
         }
 
         catch ( IOException e ) {
+            //System.out.println("ooo");
 
 
         }
