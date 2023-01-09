@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path=""/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER">
+		<attributes>
+			<attribute name="annotationpath" value="E:/X2/Module thermodynamique/Projet PMF/mfz-rxtx-2.2-20081207-win-x64/mfz-rxtx-2.2-20081207-win-x64/RXTXcomm.jar"/>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="E:/X2/Module thermodynamique/Projet PMF/mfz-rxtx-2.2-20081207-win-x64/mfz-rxtx-2.2-20081207-win-x64/RXTXcomm.jar"/>
+	<classpathentry kind="output" path=""/>
+</classpath>
