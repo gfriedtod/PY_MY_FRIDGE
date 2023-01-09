@@ -91,6 +91,7 @@ public class TwoWaySerialComm implements SerialPortDataListener {
     public  void  close(){
 
         this.portIdentifier.closePort();
+
     }
 
     @Override
@@ -106,8 +107,10 @@ public class TwoWaySerialComm implements SerialPortDataListener {
                 (new Thread(serialReader)).start();
 
                 //System.out.println("output"+serialReader.getOutput());
-                Thread.sleep(100);
+                this.daoTemperature.insertTemperature(serialReader);
+                Thread.sleep(1000);
             } catch (Exception e) {
+
                 System.err.println(e.toString());
             }
         }
