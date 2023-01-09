@@ -9,6 +9,7 @@ public class ArduinoDAO {
 		// TODO Auto-generated constructor stub
 		CommPortIdentifier serialPort;
 		Enumeration enumPort;
+		//ici nous pouvons nous assurer que la connexion au port serie est effective 
 		
 		enumPort = CommPortIdentifier.getPortIdentifiers();
 		//While (enumPort.hasMoreElements()){
