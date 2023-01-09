@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="PimpMyFridge">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/eclipse-workspace/Deliverables-PMF/JavaApp/JAR_EXECUTABLE/PimpMyFridge.jar!/" />
+      <root url="jar://$USER_HOME$/eclipse-workspace/Deliverables-PMF/JavaApp/lib/jfreechart/jcommon-1.0.23.jar!/" />
+      <root url="jar://$USER_HOME$/eclipse-workspace/Deliverables-PMF/JavaApp/lib/jfreechart/jfreechart-1.0.19-swt.jar!/" />
+      <root url="jar://$USER_HOME$/eclipse-workspace/Deliverables-PMF/JavaApp/lib/jfreechart/jfreechart-1.0.19.jar!/" />
+      <root url="jar://$USER_HOME$/eclipse-workspace/Deliverables-PMF/JavaApp/lib/rxtxcomm/RXTXcomm.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
