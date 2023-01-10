@@ -3,3 +3,8 @@
 /Conntroller_main_test.class
 /Input.class
 /InputA.class
+/IModel.class
+/IObserver.class
+/Iview.class
+/Controller.class
+/IController.class
