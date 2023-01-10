@@ -2,15 +2,24 @@ package model.Database.doa;
 
 //import jpu2016.javapetri.model.JavaPetri;
 import model.SerailConnection.SerialReader;
+
+import java.util.ArrayList;
+
 import model.ThisDays;
 //import model.SerailConnection.SerialWriter;
 
 public class QueryTemperature {
+	
 
-
-    public static String getQueryInsert(final SerialReader serialReader, ThisDays thisDays) {
-        return "INSERT INTO `PMF`.`Temperature` (`ID`, `, `date_sampling`)" + " VALUES (NULL, '"  +serialReader.getOutput()+ "' ,"+thisDays.getDays()+" );";
+    public  String getQueryInsert(final SerialReader serialReader, ThisDays thisDays,String[] arg) {
+    	String str = serialReader.getOutput();
+    	String[] splitStr = str.split(":");
+    	for (String a: splitStr)
+    		System.out.println(a);
+    	return "INSERT INTO `PMF`.`Temperature` (`ID`, `, `date_sampling`)" + " VALUES (NULL, '"  +splitStr[0]+ "' ," +splitStr[1]+"' ,"+thisDays.getDays()+" );";
     }
+    
+   
         public  String getDATA(ThisDays thisDays){
         return "SELECT * FROM `PMF`.`Temperature`";
     }

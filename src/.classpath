@@ -8,5 +8,6 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="lib" path="E:/X2/Module thermodynamique/Projet PMF/mfz-rxtx-2.2-20081207-win-x64/mfz-rxtx-2.2-20081207-win-x64/RXTXcomm.jar"/>
+	<classpathentry kind="lib" path="E:/X2/Module thermodynamique/Projet PMF/jSerialComm-1.3.11.jar"/>
 	<classpathentry kind="output" path=""/>
 </classpath>
