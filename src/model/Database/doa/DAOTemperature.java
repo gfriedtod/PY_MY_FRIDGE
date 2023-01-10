@@ -107,7 +107,7 @@ public class DAOTemperature {
      * pou l'instant l'id est statique
      */
     public void insertTemperature( SerialReader serialReader) throws SQLException {
-       this.executeUpdate(new QueryTemperature().getQueryInsert(serialReader,new ThisDays()));
+       this.executeUpdate(new QueryTemperature().getQueryInsert(serialReader,new ThisDays(), null));
 
     }
 
